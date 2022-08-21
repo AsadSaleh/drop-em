@@ -130,6 +130,7 @@ function PreviewBox({ file }: PreviewBoxProps) {
   );
 }
 
+// Ref: https://stackoverflow.com/a/12900504/9844546
 function getFileExtension(fileName: string): string {
   return fileName.slice(((fileName.lastIndexOf(".") - 1) >>> 0) + 2);
 }
